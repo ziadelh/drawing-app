@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing App</title>
+
+    <!-- p5.js Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Toolbox and Helper scripts -->
+    <script src="toolbox.js"></script>
+    <script src="helperFunctions.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="sketch.js"></script>
+
+    <!-- Drawing Tool scripts -->
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="starDrawTool.js"></script>
+    <script src="rectangleDrawTool.js"></script>
+    <script src="ellipsedrawtool.js"></script>
+    <script src="eraserTool.js"></script>
+    <script src="textTool.js"></script>
+    <script src="drawingTools.js"></script>
+    <script src="triangleDrawTool.js"></script>
+</head>
+    
+    
+<body>
+    <div class="wrapper">
+        <!-- Header and Controls -->
+        <div class="box header">
+            My Drawing App
+            <button id="clearButton">Clear</button>
+            <button id="saveImageButton">Save Image</button>
+            <button id="undoButton">Undo</button>
+            <button id="cutButton">Select Area</button>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="box" id="sidebar">
+            <div class="dropdown">
+                <div class="drop-downmenu"></div>
+            </div>
+        </div>
+
+        <div id="content"></div>
+        <div class="box colourPalette"></div>
+        <div class="box options"></div>
+    </div>
+</body>
+
+</html>
